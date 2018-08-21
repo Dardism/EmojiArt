@@ -18,6 +18,7 @@ class EmojiArtViewController: UIViewController, UIDropInteractionDelegate {
     
     //canHandle
     func dropInteraction(_ interaction: UIDropInteraction, canHandle session: UIDropSession) -> Bool {
+        //return true only if the sesssion is an image and has a url
         return session.canLoadObjects(ofClass: NSURL.self) && session.canLoadObjects(ofClass: UIImage.self)
     }
     
