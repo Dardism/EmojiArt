@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DocumentCell" textLabel="0Ze-mm-ADJ" style="IBUITableViewCellStyleDefault" id="KA1-Kh-fee">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DocumentCell" textLabel="ohe-bN-ykf" style="IBUITableViewCellStyleDefault" id="NIE-7f-nMv">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KA1-Kh-fee" id="peP-cu-Ybq">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NIE-7f-nMv" id="lbA-f2-Rg8">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ze-mm-ADJ">
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ohe-bN-ykf">
                                             <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -42,11 +42,17 @@
                             <outlet property="delegate" destination="bhY-YA-O2Z" id="WKS-jp-I2n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4bi-U9-b3f"/>
+                    <navigationItem key="navigationItem" id="4bi-U9-b3f">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="KLH-CS-dnN">
+                            <connections>
+                                <action selector="newEmojiArt:" destination="bhY-YA-O2Z" id="Eoh-hO-Bce"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFN-Fo-ERr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="-784"/>
+            <point key="canvasLocation" x="1109" y="-968"/>
         </scene>
         <!--Emoji Art View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -89,20 +95,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="79" y="386"/>
+            <point key="canvasLocation" x="369" y="335"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="S1U-Oc-Bze">
             <objects>
                 <splitViewController id="WNy-eN-BG1" sceneMemberID="viewController">
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" id="47Y-P8-C5w"/>
                         <segue destination="ws5-C8-aEm" kind="relationship" relationship="masterViewController" id="Ak3-Sv-uIt"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" id="FzW-Et-lAu"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elr-ow-ERm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1730" y="-187"/>
+            <point key="canvasLocation" x="-1407" y="-263"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N8U-VN-CjT">
@@ -120,7 +126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Qd-A9-vcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-284" y="-784"/>
+            <point key="canvasLocation" x="-107" y="-968"/>
         </scene>
     </scenes>
 </document>
